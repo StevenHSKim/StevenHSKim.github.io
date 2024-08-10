@@ -1,0 +1,79 @@
+# main links
+
+main:
+  - title: "HOME"
+    url: /
+  - title: "CATEGORIES"
+    url: /categories/
+  - title: "TAGS"
+    url: /tags/
+    
+docs:
+  - title: AI 논문 리뷰 (AI Paper Review)
+    children:
+      - title: "얼굴 표정 인식 (Facial Expression Recognition)"
+        url: /categories/ai-paper-review-fer
+        category: "ai-paper-review-fer"
+      - title: "생성 모델 (Generative Model)"
+        url: /categories/ai-paper-review-gm
+        category: "ai-paper-review-gm"
+      - title: "컴퓨터비전 (Computer Vision)"
+        url: /categories/ai-paper-review-cv
+        category: "ai-paper-review-cv"
+      - title: "자연어처리 (Natural Language Processing)"
+        url: /categories/ai-paper-review-nlp
+        category: "ai-paper-review-nlp"
+
+  - title: 인공지능 (Artifitial Intelligence)
+    children:
+      - title: "기계학습 (Machine Learning)"
+        url: /categories/ai-ml
+        category: "ai-ml"
+      - title: "컴퓨터비전 (Computer Vision)"
+        url: /categories/ai-cv
+        category: "ai-cv"
+      - title: "자연어처리 (Natural Language Processing)"
+        url: /categories/ai-nlp
+        category: "ai-nlp"
+
+  - title: 수학 (Mathematics)
+    children:
+      - title: "선형대수 (Linear Algebra)"
+        url: /categories/math-la
+        category: "math-la"
+      - title: "미적분학 (Calculus)"
+        url: /categories/math-cal
+        category: "math-cal"
+      - title: "확률및통계 (Probability and Statistic)"
+        url: /categories/math-prob
+        category: "math-prob"
+
+  - title: 컴퓨터 과학 (Computer Science)
+    children:
+      - title: "자료구조 (Data Structure)"
+        url: /categories/cs-ds
+        category: "cs-ds"
+      - title: "알고리즘 (Algorithm)"
+        url: /categories/cs-alg
+        category: "cs-alg"
+
+  - title: 프로그래밍 (Programming)
+    children:
+      - title: "파이토치 (PyTorch)"
+        url: /categories/prg-pytorch
+        category: "prg-pytorch"
+      - title: "리눅스 (Linux)"
+        url: /categories/prg-linux
+        category: "prg-linux"
+      - title: "아나콘다 (Anaconda)"
+        url: /categories/prg-anaconda
+        category: "prg-anaconda"
+      - title: "에러 해결 (Error Resolution)"
+        url: /categories/prg-error
+        category: "prg-error"
+
+  - title: ETC
+    children:
+      - title: "etc"
+        url: /categories/etc
+        category: "etc"
