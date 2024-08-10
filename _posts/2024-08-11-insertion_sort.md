@@ -18,36 +18,36 @@ last_modified_at: 2024-08-11
 
 ## 1. 삽입정렬의 원리
 
-<center><img src='{{"/assets/img/2024-08-11-insertion_sort/img1.png" | relative_url}}' width="50%"></center>
+<center><img src='{{"/assets/img/2024-08-11-insertion_sort/img1.png" | relative_url}}' width="30%"></center>
 (1) 삽입정렬은 2번째 index에서 시작합니다 (코드 작성시 주의)
 <br>
 
-<center><img src='{{"/assets/img/2024-08-11-insertion_sort/img2.png" | relative_url}}' width="50%"></center>
+<center><img src='{{"/assets/img/2024-08-11-insertion_sort/img2.png" | relative_url}}' width="30%"></center>
 (2) 현재의 key가 앞의 숫자보다 큰지 작은지 확인하고,
 
 * 앞의 숫자 < key 이면: 순서 그대로 유지
 * 앞의 숫자 > key 이면: 서로 위치 바꾸기 (Swap)
 <br>
 
-<center><img src='{{"/assets/img/2024-08-11-insertion_sort/img3.png" | relative_url}}' width="50%"></center>
+<center><img src='{{"/assets/img/2024-08-11-insertion_sort/img3.png" | relative_url}}' width="30%"></center>
 (3) 이후, key를 오른쪽으로 한 칸 옮기기
 <br>
 
-<center><img src='{{"/assets/img/2024-08-11-insertion_sort/img4.png" | relative_url}}' width="50%"></center>
+<center><img src='{{"/assets/img/2024-08-11-insertion_sort/img4.png" | relative_url}}' width="30%"></center>
 (4) key인 4가 8보다 작으므로 swap
 <br>
 
-<center><img src='{{"/assets/img/2024-08-11-insertion_sort/img5.png" | relative_url}}' width="50%"></center>
+<center><img src='{{"/assets/img/2024-08-11-insertion_sort/img5.png" | relative_url}}' width="30%"></center>
 (5) 작업이 끝났으니 다시 key 한 자리 옮기기
 <br>
 
 (6) 위 과정을 계속 반복하여 최종 정렬된 array 생성
-<center><img src='{{"/assets/img/2024-08-11-insertion_sort/img6.png" | relative_url}}' width="50%"></center>
-<center><img src='{{"/assets/img/2024-08-11-insertion_sort/img7.png" | relative_url}}' width="50%"></center>
-<center><img src='{{"/assets/img/2024-08-11-insertion_sort/img8.png" | relative_url}}' width="50%"></center>
-<center><img src='{{"/assets/img/2024-08-11-insertion_sort/img9.png" | relative_url}}' width="50%"></center>
-<center><img src='{{"/assets/img/2024-08-11-insertion_sort/img10.png" | relative_url}}' width="50%"></center>
-<center><img src='{{"/assets/img/2024-08-11-insertion_sort/img11.png" | relative_url}}' width="50%"></center>
+<center><img src='{{"/assets/img/2024-08-11-insertion_sort/img6.png" | relative_url}}' width="30%"></center>
+<center><img src='{{"/assets/img/2024-08-11-insertion_sort/img7.png" | relative_url}}' width="30%"></center>
+<center><img src='{{"/assets/img/2024-08-11-insertion_sort/img8.png" | relative_url}}' width="30%"></center>
+<center><img src='{{"/assets/img/2024-08-11-insertion_sort/img9.png" | relative_url}}' width="30%"></center>
+<center><img src='{{"/assets/img/2024-08-11-insertion_sort/img10.png" | relative_url}}' width="30%"></center>
+<center><img src='{{"/assets/img/2024-08-11-insertion_sort/img11.png" | relative_url}}' width="30%"></center>
 
 
 
