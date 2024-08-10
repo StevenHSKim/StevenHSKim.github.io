@@ -7,6 +7,7 @@ categories:
 
 tags:
   - cs-alg
+  - sort
 
 use_math: true
 classes: wide
