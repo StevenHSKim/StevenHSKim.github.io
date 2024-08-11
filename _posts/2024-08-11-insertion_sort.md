@@ -6,7 +6,7 @@ categories:
   - cs-alg
 
 tags:
-  - cs-alg
+  - algorithm
   - sort
 
 use_math: true
