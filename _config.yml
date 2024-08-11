@@ -329,6 +329,8 @@ defaults:
       related: true
       sidebar:
         nav: "docs"
+      mathjax: true
+
   # _pages
   - scope:
       path: ""
@@ -342,3 +344,4 @@ defaults:
       related: true
       sidebar:
         nav: "docs"
+      mathjax: true
