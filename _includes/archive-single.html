@@ -12,13 +12,17 @@
 
 <div class="{{ include.type | default: 'list' }}__item">
   <article class="archive__item" itemscope itemtype="https://schema.org/CreativeWork">
-    <!-- 티저 이미지 섹션 -->
-    <div class="archive__item-teaser">
-      <!-- JavaScript로 설정할 티저 이미지 -->
-      <img id="teaser-image-{{ post.id }}" src="{{ site.teaser | default: '' }}" alt="">
-    </div>
+    {% if include.type == "grid" and teaser %}
+      <div class="archive__item-teaser">
+        <img src="{{ teaser | relative_url }}" alt="">
+      </div>
+    {% endif %}
     <h2 class="archive__item-title no_toc" itemprop="headline">
-      <a href="{{ post.url | relative_url }}" rel="permalink">{{ title }}</a>
+      {% if post.link %}
+        <a href="{{ post.link }}">{{ title }}</a> <a href="{{ post.url | relative_url }}" rel="permalink"><i class="fas fa-link" aria-hidden="true" title="permalink"></i><span class="sr-only">Permalink</span></a>
+      {% else %}
+        <a href="{{ post.url | relative_url }}" rel="permalink">{{ title }}</a>
+      {% endif %}
     </h2>
     
     <p class="page__meta">
@@ -29,33 +33,7 @@
       {% endif %}
     </p>
     
-    <!-- 숨겨진 콘텐츠 영역 -->
-    <div class="content" style="display:none;">
-      {{ post.content }}
-    </div>
-
     {% include page__meta.html type=include.type %}
-    {% if post.excerpt %}
-      <p class="archive__item-excerpt" itemprop="description">{{ post.excerpt | markdownify | strip_html | truncate: 160 }}</p>
-    {% endif %}
+    {% if post.excerpt %}<p class="archive__item-excerpt" itemprop="description">{{ post.excerpt | markdownify | strip_html | truncate: 160 }}</p>{% endif %}
   </article>
 </div>
-
-<!-- JavaScript 추가: 첫 번째 이미지를 티저 이미지로 설정 -->
-<script>
-  document.addEventListener("DOMContentLoaded", function() {
-    // 각 포스트의 아티클 요소를 찾습니다.
-    var article = document.querySelector('.archive__item');
-    // 티저 이미지 요소를 찾습니다.
-    var teaserImg = article.querySelector('img[id^="teaser-image"]');
-    // 숨겨진 콘텐츠 영역을 찾습니다.
-    var contentDiv = article.querySelector('.content');
-    // 콘텐츠 영역에서 첫 번째 이미지를 찾습니다.
-    var img = contentDiv.querySelector('img');
-    
-    // 첫 번째 이미지가 존재하면, 티저 이미지로 설정합니다.
-    if (img) {
-      teaserImg.src = img.src;
-    }
-  });
-</script>

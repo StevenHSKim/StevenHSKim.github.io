@@ -11,47 +11,17 @@
 {% endif %}
 
 <div class="{{ include.type | default: "list" }}__item">
-  <article class="archive-item">
-    <!-- 티저 이미지 섹션 -->
-    <div class="archive__item-teaser">
-      <!-- JavaScript로 설정할 티저 이미지 -->
-      <img id="teaser-image-{{ post.id }}" src="{{ site.teaser | default: '' }}" alt="">
-    </div>
-    
-    <div>
-      <span>
-        <a href="{{ post.url }}">{{ post.title }}</a>
-      </span>
-      <small> 
-        <i class="fas fa-fw fa-calendar-alt" aria-hidden="true"></i> {{ post.date | date: " %Y.%m.%d" }}
-        {% if site.category_archive.type and post.categories[0] and site.tag_archive.type and post.tags[0] %}
-          {%- include post__taxonomy.html -%}
-        {% endif %}
-      </small>
-    </div>
-  </article>
+    <article class="archive-item">
+        <div>
+            <span>
+              <a href="{{ post.url }}">{{post.title}}</a>
+            </span>
+            <small> 
+              <i class="fas fa-fw fa-calendar-alt" aria-hidden="true"> </i>{{ post.date | date: " %Y.%m.%d" }}
+              {% if site.category_archive.type and post.categories[0] and site.tag_archive.type and post.tags[0] %}
+                {%- include post__taxonomy.html -%}
+              {% endif %}
+            </small>
+        </div>
+      </article>
 </div>
-
-<!-- 숨겨진 콘텐츠 영역 -->
-<div class="content" style="display:none;">
-  {{ post.content }}
-</div>
-
-<!-- JavaScript 추가: 첫 번째 이미지를 티저 이미지로 설정 -->
-<script>
-  document.addEventListener("DOMContentLoaded", function() {
-    // 각 포스트의 아티클 요소를 찾습니다.
-    var article = document.querySelector('.archive-item');
-    // 티저 이미지 요소를 찾습니다.
-    var teaserImg = article.querySelector('img[id^="teaser-image"]');
-    // 숨겨진 콘텐츠 영역을 찾습니다.
-    var contentDiv = article.querySelector('.content');
-    // 콘텐츠 영역에서 첫 번째 이미지를 찾습니다.
-    var img = contentDiv.querySelector('img');
-    
-    // 첫 번째 이미지가 존재하면, 티저 이미지로 설정합니다.
-    if (img) {
-      teaserImg.src = img.src;
-    }
-  });
-</script>
