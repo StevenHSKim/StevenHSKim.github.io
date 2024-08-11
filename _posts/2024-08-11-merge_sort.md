@@ -45,15 +45,15 @@ last_modified_at: 2024-08-11
 
 **(3) list에 append된 숫자는 지우고 index를 한 칸 증가시킨다.**
 
-<center><img src='{{"/assets/img/2024-08-11-merge_sort/img6.png" | relative_url}}' width="10%"></center><br> 
+<center><img src='{{"/assets/img/2024-08-11-merge_sort/img6.png" | relative_url}}' width="60%"></center><br> 
 
 **(4) 위 과정을 "하나의 Array의 원소가 다 사라질 때까지" 계속 반복한다.**
 
-<center><img src='{{"/assets/img/2024-08-11-merge_sort/img7.png" | relative_url}}' width="10%"></center><br> 
+<center><img src='{{"/assets/img/2024-08-11-merge_sort/img7.png" | relative_url}}' width="60%"></center><br> 
 
 **(5) 두 Array 중 하나의 원소가 모두 사라지면, 남은 한 Array의 leftover 원소를 모두 append한다.**
 
-
+<br>
 
 # 2. 병합 정렬 Python 코드
 
@@ -94,7 +94,8 @@ return result
 
 그리고, 마지막으로 result를 return합니다.
 
-#
+---
+
 ### 이번에는 array를 정렬하는 Merge_sort 함수 코드에 대해서 설명하겠습니다.
 ```python
 mid = len(arr) // 2
@@ -118,7 +119,8 @@ return merge(left, right)
 ```
 마지막으로 나눠진 left와 right를 merge() 함수를 통해 병합해준 것을 반환합니다.
 
-#
+---
+
 ### 아래는 병합 정렬의 전체 코드 및 병합 정렬 실행시간을 나타내는 코드입니다.
 ```python
 #Implement Merge Sort on random shuffled [1,2,3,4,5, .... 9999,10000]
@@ -191,12 +193,12 @@ Recursion이 일어나는 것을 시각화하면 아래와 같습니다.
 
 어차피 n을 쪼개는 것이기 때문에, 매 Level에서 발생하는 반복 횟수는 똑같이 cn입니다.
 
-이진 tree의 성질에 따라 높이는 logN을 가지게 되고,
-
-한 level에서 발생하는 cn번의 반복횟수가 총 높이인 logN만큼 반복되므로, n*log(n) = nlog(n)이 됩니다.
+이진 tree의 성질에 따라 높이는 logN을 가지게 되고, 한 level에서 발생하는 cn번의 반복횟수가 총 높이인 logN만큼 반복되므로, n*log(n) = nlog(n)이 됩니다.
 
 따라서, **병합정렬의 시간복잡도는 O(nlogn)** 입니다.
-#
+
+---
+
 ### 공간복잡도:
 병합 과정에서 대소비교를 마친 값들을 추가 보조 공간(Auxiliary space)에 append하였습니다.
 

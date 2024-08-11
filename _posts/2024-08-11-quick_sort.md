@@ -31,7 +31,7 @@ last_modified_at: 2024-08-11
 
 **본 내용은 로무토(Lomuto) 방식의 퀵 정렬에 대한 설명입니다.**
 
-#
+---
 
 아래는 간략한 **Lomuto Partition** 과정 설명입니다.
 
@@ -141,7 +141,7 @@ def partition(A, low, high):
 
 위와 같은 array 상황에서 partition을 수행합니다.
 
-#
+---
 
 다음은 partition을 재귀적으로 수행하는 quick_sort 함수 코드입니다.
 
@@ -156,7 +156,7 @@ def quick_sort(A, low, high):
 
 피봇의 인덱스(pivot_idx)를 사용하여, 왼쪽/오른쪽으로 분할된 array를 각각 재귀적으로 다시 partition을 수행해줍니다.
 
-#
+---
 
 아래는 Lomuto Partition방식을 이용한 QuickSort의 전체 코드입니다.
 
@@ -196,7 +196,7 @@ Partition 하는 과정에서는 j가 array를 한 번 도는 수행시간을 �
 
 이제 Quick sort에서 재귀적으로 정렬을 하는 과정은 아래와 같습니다.
 
-<center><img src='{{"/assets/img/2024-08-11-quick_sort/img14.png" | relative_url}}' width="50%"></center><br>
+<center><img src='{{"/assets/img/2024-08-11-quick_sort/img14.png" | relative_url}}' width="70%"></center><br>
 
 - 이진 트리의 구조를 가지고, 재귀적으로 array를 분할해나갑니다.
 - 퀵 정렬은 pivot이 정확히 가운데에 위치하여 절반씩 array를 쪼개나가는 경우가 Best Case 입니다.
@@ -225,7 +225,7 @@ Partition은 마찬가지로 O(n)의 수행시간을 갖기 때문에,
 **Average Case:**
 퀵 정렬의 Average Case는 Best Case의 경우와 유사합니다. 따라서 **O(nlogn)** 의 시간복잡도를 갖습니다.
 
-#
+---
 
 ### 공간복잡도:
 추가적인 Memory의 요구가 없는, In-place sort 방식입니다. 주어진 메모리 안에서만 정렬합니다.
