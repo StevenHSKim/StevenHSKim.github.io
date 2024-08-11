@@ -8,5 +8,5 @@ types: posts
 
 {% assign posts = site.categories['ai-paper-review-cv']%}
 {% for post in posts %}
-  {% include archive-single.html type=page.entries_layout %}
+  {% include archive-single3.html type=page.entries_layout %}
 {% endfor %}
