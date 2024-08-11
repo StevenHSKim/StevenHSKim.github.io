@@ -42,7 +42,7 @@
     <!-- 방문자 수 -->
     <li style="text-align: center; margin-top: 40px;">
         <a href="https://hits.seeyoufarm.com"><img src="https://hits.seeyoufarm.com/api/count/incr/badge.svg?url=https%3A%2F%2Fstevenhskim.github.io&count_bg=%23A1A69E&title_bg=%23555555&icon=&icon_color=%23E7E7E7&title=visitors&edge_flat=false"
-          style="width: 80px; height: auto;"></a>
+          style="width: 120px; height: auto;"></a>
     </li>
   </ul>
 </nav>
