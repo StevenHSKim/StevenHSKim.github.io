@@ -117,7 +117,7 @@ analytics:
 author:
   name             : "Steven Kim" # "Your Name"
   avatar           : "/assets/img/crab-holding-fish.png" # path of avatar image, e.g. "/assets/images/bio-photo.jpg"
-  bio              : "Interested in Computer Vision" # "I am an **amazing** person."
+  bio              : "Currently I'm Interested in Deep Learning, Machine Learning, Computer Vision, Facial Expression Recognition" # "I am an **amazing** person."
   location         : "Seoul, Korea" # "Somewhere"
   email            :
   links:
