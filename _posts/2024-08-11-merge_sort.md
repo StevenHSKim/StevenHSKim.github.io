@@ -27,7 +27,7 @@ last_modified_at: 2024-08-11
 
 <center><img src='{{"/assets/img/2024-08-11-merge_sort/img1.png" | relative_url}}' width="40%"></center>
 <br>
-<center><img src='{{"/assets/img/2024-08-11-merge_sort/img2.png" | relative_url}}' width="50%"></center>
+<center><img src='{{"/assets/img/2024-08-11-merge_sort/img2.jpg" | relative_url}}' width="50%"></center>
 
 
 ## 1.2. Merge
