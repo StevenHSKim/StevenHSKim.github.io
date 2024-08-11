@@ -1,5 +1,5 @@
 ---
-title: "[알고리즘] 병합 정렬 (Merge Sort) - Python
+title: "[알고리즘] 병합 정렬 (Merge Sort) - Python"
 excerpt: ""
 
 categories:
