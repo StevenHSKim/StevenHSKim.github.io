@@ -330,6 +330,7 @@ defaults:
       sidebar:
         nav: "docs"
       mathjax: true
+      classes: wide
 
   # _pages
   - scope:
@@ -345,3 +346,4 @@ defaults:
       sidebar:
         nav: "docs"
       mathjax: true
+      classes: wide
