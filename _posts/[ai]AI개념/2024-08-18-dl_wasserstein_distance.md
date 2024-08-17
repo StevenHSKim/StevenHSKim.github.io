@@ -219,6 +219,6 @@ GAN이 학습할 때 초기 단계에서 Generator가 만든 fake data는 초기
 ---
 <br>
 
-본 내용은 [고려대학교 오승상 교수님의 강의 영상](https://www.youtube.com/watch?v=Fsv57RcHRWQ&list=PLvbUC2Zh5oJvByu9KL82bswYT2IKf0K1M&index=43)을 토대로 만들어졌습니다.
+본 내용은 [고려대학교 오승상 교수님의 강의 영상](https://www.youtube.com/watch?v=Fsv57RcHRWQ)을 토대로 만들어졌습니다.
 
 
