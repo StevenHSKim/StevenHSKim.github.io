@@ -18,7 +18,7 @@ last_modified_at: 2024-08-18
 
 **Wasserstein Distance** 또한 거리를 나타내는 것 중 한 가지 방식입니다. 
 
-본 내용에서는 Wasserstein Distance를 이용하여 두 확률 분포(Probability Distribution)의 거리를 재보겠습니다.
+본 내용에서는 Wasserstein Distance를 이용하여 두 확률 분포(Probability Distribution)의 거리를 재보고, 왜 생성모델 중 GAN에 사용되는지 보겠습니다.
 
 
 ## Distances(Metric) vs Divergence
