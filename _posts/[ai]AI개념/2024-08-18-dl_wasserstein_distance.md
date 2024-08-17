@@ -135,6 +135,8 @@ Wasserstein Distance의 공식은 다음과 같습니다.
 
 하지만, 이 joint distribution은 하나만 만들어지는 것이 아니라, 어떻게 설정하냐에 따라서 더 만들어 질 수 있습니다.
 
+---
+<br>
 아래는 같은 distribution에서 추출한 \\(x\\)와 \\(y\\)의 다른 두번째 \\(\gamma\\) joint distribution 조합을 표로 나타낸 것입니다.
 
 <p align="center"><img src="https://github.com/user-attachments/assets/92010ae8-8d99-4ff5-b5e1-5f14030cf618" width="200"></p>
@@ -206,7 +208,7 @@ P분포 모양의 흙더미를 \\(Q\\)분포 모양의 흙더미로 옮기는 �
 
 그래서 이 세가지 divergence는 두 분포가 어느정도 겹쳐있고 근접해 있을 때는 좋은 성능을 내는데, 떨어져 있는 경우에는 divergence를 사용해서 두 분포의 거리를 좁히는 것이 어렵습니다. 그런데 좌우 방향의 거리를 이용하는 Wasserstein distance는 이 문제를 잘 해결합니다.
 
-<p align="center"><img src="https://github.com/user-attachments/assets/e52a6ed3-e68d-4186-a5b8-0da871a82967" width="500"></p>
+<p align="center"><img src="https://github.com/user-attachments/assets/e52a6ed3-e68d-4186-a5b8-0da871a82967" width="550"></p>
 
 이제 disjoint supports를 다시 보면, Wasserstein distance를 사용한 경우, disjoint support라고 하더라도 \\(Q\\)가 멀리 가면 멀리 갈수록 값이 커지게 됩니다. 반대로 가까이 가면 작아지겠죠. 아까 본 세개의 divergence에서는 거의 불가능했던 내용입니다. Wasserstein distance의 이러한 특징이 GAN을 학습하는 데 아주 중요한 역할을 합니다. GAN이 학습할 때 초기 단계에서 Generator가 만든 fake data는 초기에는 성능이 많이 떨어져서 real data와 거의 전혀 다른 모습입니다. 그럼 두 분포가 아주 많이 떨어져 있을 텐데 그런 경우에 KL divergence나 JSD 이런 것들은 실제로 이 간격을 줄이는 것을 잘 할 수가 없습니다. 그런데 Wasserstein distance는 이 두 분포가 많이 떨어져 있다 하더라도 이 두 분포의 거리를 잘 줄일 수 있습니다.
 
