@@ -5,6 +5,7 @@ excerpt: ""
 categories:
   - prg-error
 tags:
+  - programming
   - error
   - pytorch
   - out of memory error
