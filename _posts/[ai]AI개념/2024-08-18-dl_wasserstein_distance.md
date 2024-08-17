@@ -193,13 +193,13 @@ P분포 모양의 흙더미를 \\(Q\\)분포 모양의 흙더미로 옮기는 �
 <p align="center"><img src="https://github.com/user-attachments/assets/9c5d932d-8dcc-4f57-95b5-228e7a69be0d" width="250"></p>
 
 
-만약에 P와 Q가 disjoint support를 갖는다고 하겠습니다. 확률에서 support라는 말은 확률값이 0보다 큰 x값을 말하는데요. 분포의 support 두개가 서로 겹치지 않는 상황을 disjoint support라고 합니다. 이 상황에서 여기있는 divergence 값들을 계산해보겠습니다.
+만약에 P와 Q가 disjoint support를 갖는다고 하겠습니다. 확률에서 support라는 말은 확률값이 0보다 큰 \\(x\\)값을 말하는데요. 분포의 support 두개가 서로 겹치지 않는 상황을 disjoint support라고 합니다. 이 상황에서 여기있는 divergence 값들을 계산해보겠습니다.
 
-- TV distance부터 하면, 아까 P가 Q보다 더 큰 쪽에서의 면적이므로 1이 나옵니다.
-- KLD를 보면, 아까 Q가 P에서 멀리 떨어진 상황에서 무한대가 나온다고 했습니다. 이것도 같은 상황이므로 무한대의 값을 가집니다.
+- TV distance부터 하면, 아까 \\(P\\)가 \\(Q\\)보다 더 큰 쪽에서의 면적이므로 1이 나옵니다.
+- KLD를 보면, 아까 \\(Q\\)가 \\(P\\)에서 멀리 떨어진 상황에서 무한대가 나온다고 했습니다. 이것도 같은 상황이므로 무한대의 값을 가집니다.
 - JSD는 \\(log2\\)의 값이 나옵니다.
 
-이제 Q가 움직이는 상황을 가정하겠습니다. 그런데 Q가 움직인다고 하더라도 P와 support를 계속해서 겹치지만 않는다면, 이 밑의 거리 값들은 바뀌지 않는다는 것입니다. 멀리 움직여도 어차피 support가 안 겹쳐서 위 값들을 갖고, 가까이 가더라도 support가 안 겹치기만 하면 움직였음에도 불구하고 이 값들은 같은 값을 갖는다는 것입니다.
+이제 \\(Q\\)가 움직이는 상황을 가정하겠습니다. 그런데 Q가 움직인다고 하더라도 \\(P\\)와 support를 계속해서 겹치지만 않는다면, 이 밑의 거리 값들은 바뀌지 않는다는 것입니다. 멀리 움직여도 어차피 support가 안 겹쳐서 위 값들을 갖고, 가까이 가더라도 support가 안 겹치기만 하면 움직였음에도 불구하고 이 값들은 같은 값을 갖는다는 것입니다.
 
 이걸 반대로 말하면, \\(P\\)와 \\(Q\\)가 disjoint supports를 갖는 상황이면, Divergence를 이용해서 \\(Q\\) 분포를 마음대로 옮길 수가 없게 되는 것입니다.
 <br>
@@ -219,6 +219,6 @@ GAN이 학습할 때 초기 단계에서 Generator가 만든 fake data는 초기
 ---
 <br>
 
-본 내용은 [고려대학교 오승상 교수님의 강의 영상](https://www.youtube.com/watchv=Fsv57RcHRWQ&ab_channel=%EC%98%A4%EC%8A%B9%EC%83%81Gmail)을 토대로 만들어졌습니다.
+본 내용은 [고려대학교 오승상 교수님의 강의 영상](https://www.youtube.com/watch?v=Fsv57RcHRWQ&list=PLvbUC2Zh5oJvByu9KL82bswYT2IKf0K1M&index=43)을 토대로 만들어졌습니다.
 
 
