@@ -17,7 +17,7 @@ last_modified_at: 2024-08-11
 ---
 
 
-# 1. 퀵 정렬의 원리
+## 1. 퀵 정렬의 원리
 
 퀵 정렬은 Divide and Conquer 방식을 따릅니다.
 
@@ -115,7 +115,7 @@ j가 array를 모두 순회했으면, 마지막으로 pivot과 A[i]를 swap 하�
 Partition 작업을 마쳤으면, pivot을 기준으로 왼쪽/오른쪽으로 나누어진 array에 각각 재귀적으로 partition을 반복 수행합니다.
 
 
-# 2. 퀵 정렬 Python 코드
+## 2. 퀵 정렬 Python 코드
 
 ```python
 def partition(A, low, high):
@@ -186,7 +186,7 @@ def quick_sort(A, low, high):
         quick_sort(A, pivot_idx + 1, high) #partition의 오른쪽 array에 대해 재귀
 ```
 
-# 3. 퀵 정렬 시간복잡도/공간복잡도
+## 3. 퀵 정렬 시간복잡도/공간복잡도
 
 ### 시간복잡도:
 

@@ -16,9 +16,9 @@ date: 2024-08-11
 last_modified_at: 2024-08-11
 ---
 
-# 1. 병합 정렬 원리
+## 1. 병합 정렬 원리
 
-## 1.1. Merge_Sort
+### 1.1. Merge_Sort
 병합 정렬은 Divide and Conquer 방식을 사용합니다. 먼저 Array를 둘로 나누고(divide), 각 나눠진 Array를 각각 정렬(Conquer)하여 다시 합치는 방식을 말합니다.
 
 이때, 재귀적으로 배열을 나누고, 정렬해주는 과정을 거칩니다.
@@ -30,7 +30,7 @@ last_modified_at: 2024-08-11
 <center><img src='{{"/assets/img/2024-08-11-merge_sort/img2.jpg" | relative_url}}' width="50%"></center>
 
 
-## 1.2. Merge
+### 1.2. Merge
 이제 각자 정렬이 끝난 두 배열을 합치는 Merge 과정을 알아보겠습니다.
 
 <center><img src='{{"/assets/img/2024-08-11-merge_sort/img3.png" | relative_url}}' width="10%"></center><br> 
@@ -55,7 +55,7 @@ last_modified_at: 2024-08-11
 
 <br>
 
-# 2. 병합 정렬 Python 코드
+## 2. 병합 정렬 Python 코드
 
 ### 앞서 설명한 병합 과정을 코드로 나타내보겠습니다.
 
@@ -178,7 +178,7 @@ print("merge sorting time (sec):", time_a)
 # merge sorting time (sec): 0.02367377281188965
 ```
 
-# 3. 병합 정렬 시간복잡도/공간복잡도
+## 3. 병합 정렬 시간복잡도/공간복잡도
 
 ### 시간복잡도:
 병합 정렬 전체 시간복잡도를 T(n)이라고 하면, T(n) = C(1) + 2T(n/2) + C(n) 입니다.

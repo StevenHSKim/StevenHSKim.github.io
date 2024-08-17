@@ -18,7 +18,7 @@ last_modified_at: 2024-08-12
 
 Topological Sort는 기본적으로 DFS를 통해 구현합니다. DFS에 대한 자세한 내용은 [여기](https://stevenhskim.github.io/cs-alg/alg_dfs/)에 있습니다.
 
-# Topological Sort
+## Topological Sort
 Topological Sort란 그래프를 표현하는 한 가지 방식입니다. 그래프를 수평적으로, 즉 모든 노드를 한 줄로 나열하여 정렬하는 방식입니다. Topological Sort는 Directed Acyclic Graph(DAG)에서 수행됩니다.
 
 - Directed Acyclic Graph(DAG): 그래프 연결에 방향이 있고(Directed), 한 곳에서 순환이 발생하지 않는(Acyclic) 그래프(Graph)를 의미합니다.
@@ -35,9 +35,10 @@ Topological Sort란 그래프를 표현하는 한 가지 방식입니다. 그래
 
 이 Topological 개념이 다른 그래프 알고리즘에서 주요하게 사용됩니다.
 
-# Running Time
+## Running Time
 DFS를 통해 탐색하기 때문에, DFS의 수행 시간과 동일합니다: **O(V+E)**
 
 ---
+
 이 글은 다음의 자료를 참고하여 만들어졌습니다.
 <https://ocw.mit.edu/courses/6-006-introduction-to-algorithms-spring-2020/>

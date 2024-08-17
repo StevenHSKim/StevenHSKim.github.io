@@ -16,12 +16,12 @@ date: 2024-08-12
 last_modified_at: 2024-08-12
 ---
 
-# 단일 출발지 최단 경로 Single Source Shortest Path
+## 단일 출발지 최단 경로 Single Source Shortest Path
 Single Source Shortest Path란, 말 그대로 하나의 출발지(Single Source)에서 시작한 최단 경로(Shortest Path)를 말합니다.
 
 
 
-# 벨만-포드 알고리즘 Bellman-Ford Algorithm
+## 벨만-포드 알고리즘 Bellman-Ford Algorithm
 Bellman-Ford 알고리즘은, Dijkstra 알고리즘과 함께 가중치가 있고(Weighted) 방향이 있는(Directed) 그래프에서 Single Source Shortest Path(SSSP)을 구하는 알고리즘입니다. **가중치(Weight)가 0보다 크거나 같은 그래프만 풀 수 있는 Dijkstra 알고리즘과는 다르게, Bellman-Ford 알고리즘은 Negative Weighted Edge가 존재하는 경우에도 SSSP 문제를 풀 수 있습니다.** 
 
 Bellman-Ford 알고리즘은 두가지의 주요 기능을 가지고 있습니다.
@@ -123,7 +123,7 @@ Edge relaxation은 만약 v.d > u.d + w(y,v)가 존재한다면 더 작은 쪽�
 - 그것은 Negative Cylce이 그래프 내에 존재한다는 의미입니다.
 
 
-# Running Time
+## Running Time
 
 <p align="center"><img src="https://github.com/user-attachments/assets/7b6be912-2286-4ad9-aa13-7361a9f4fa2a" width="400"></p>
 

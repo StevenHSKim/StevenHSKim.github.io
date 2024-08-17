@@ -16,12 +16,12 @@ date: 2024-08-12
 last_modified_at: 2024-08-12
 ---
 
-# 단일 출발지 최단 경로 Single Source Shortest Path
+## 단일 출발지 최단 경로 Single Source Shortest Path
 Single Source Shortest Path란, 말 그대로 하나의 출발지(Single Source)에서 시작한 최단 경로(Shortest Path)를 말합니다.
 
 ---
 
-# 다익스트라 알고리즘 Dijkstra Algorithm
+## 다익스트라 알고리즘 Dijkstra Algorithm
 Dijkstra 알고리즘은, 가중치가 있고(Weighted) 방향이 있는(Directed) 그래프에서 Single Source Shortest Path(SSSP)을 구하는 알고리즘입니다. 
 
 **단, Dijkstra의 경우 가중치(Weight)가 0보다 크거나 같은 그래프만 풀 수 있습니다.** Weight가 모든 범위, 즉 음수도 존재하는 그래프의 SSSP를 푸는 알고리즘으로는 벨만-포드(Bellman-Ford) 알고리즘이 있습니다.
@@ -91,7 +91,7 @@ Pseudo Code를 한줄 씩 따라가보며 Dijkstra 알고리즘의 진행을 보
 <p align="center"><img src="https://github.com/user-attachments/assets/639c2948-2f6c-4163-a315-3a81fd7afad3" width="900"></p>
 
 
-# Running Time
+## Running Time
 Dijkstra 알고리즘은 Priority Queue를 구성하는 자료구조의 종류에 따라서 다른 Running Time을 가집니다. 여기서 V는 vertex의 개수를, E는 edge의 개수를 의미합니다.
 
 <p align="center"><img src="https://github.com/user-attachments/assets/15582663-a84e-4dad-b466-cab19f11e45f" width="400"></p>

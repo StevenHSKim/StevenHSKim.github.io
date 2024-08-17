@@ -16,12 +16,12 @@ date: 2024-08-12
 last_modified_at: 2024-08-12
 ---
 
-# Directed Acyclic Graph(DAG)
+## Directed Acyclic Graph(DAG)
 DAG란 그래프 연결에 방향이 있고(Directed), 한 곳에서 순환이 발생하지 않는(Acyclic) 그래프(Graph)를 의미합니다.
 
 <p align="center"><img src="https://github.com/user-attachments/assets/93b63517-aeeb-457c-ae86-f87f4ebe2a10" width="300"></p>
 
-# Edge Relaxation
+## Edge Relaxation
 DAG Shortest Path 문제를 풀기 위해 Edge Relaxation 개념이 필요합니다. Edge Relaxation이란, 가중치가 있는 그래프(Weighted Graph)에서, 각 edge에 배정되어 있는 만큼의 가중치를 더해가며 탐색할 때, 더 나은(작은) 경로의 가중치가 있다면 그 값으로 update하는 것을 의미합니다. 
 
 말이 어렵게 느껴지는데 굉장히 쉬운 개념입니다. 결국 더 나은 대안으로 수정한다는 의미입니다. 그리고 앞으로 그래프에서 이 작업을 Relax라고 부릅니다.
@@ -43,7 +43,7 @@ Edge Relaxation의 코드는 다음과 같습니다. 여기서 ".d"는 시작점
 - v.d를 더 작은 값으로 업데이트한다.
 
 
-# DAG Shortest Path
+## DAG Shortest Path
 DAG 그래프의 최단경로를 찾는 문제입니다. DAG Shortest Path는 Topological Sort와 Edge Relaxation을 이용하여 구할 수 있습니다. Topological Sort에 대한 자세한 내용은 [여기](https://stevenhskim.github.io/cs-alg/alg_topological_sort/)에서 확인하실 수 있습니다.
 
 DAG Shortest Path를 찾는 Pseudo Code는 아래와 같습니다.
@@ -77,7 +77,7 @@ DAG Shortest Path의 과정을 시각화하면 다음과 같습니다.
 
 
 
-# Running Time
+## Running Time
 - 코드의 1번 줄의 Topological Sort에서 O(V+E)가 소요되고,
 - 2번 줄의 Initialization에서 O(V)가 소요됩니다.
 - 3번 줄 for 문에서 O(E)가 소요됩니다.
@@ -85,5 +85,6 @@ DAG Shortest Path의 과정을 시각화하면 다음과 같습니다.
 즉, DAG의 Shortest Path를 찾는 알고리즘의 수행시간은 여느 그래프 알고리즘과 마찬가지로 **O(V+E)** 를 갖습니다.
 
 ---
+
 참고 자료:
 <https://ocw.mit.edu/courses/6-006-introduction-to-algorithms-spring-2020/>
