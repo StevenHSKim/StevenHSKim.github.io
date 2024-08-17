@@ -1,5 +1,5 @@
 ---
-title: "torch.cuda.OutOfMemoryError: CUDA out of memory"
+title: "[에러][Pytorch] torch.cuda.OutOfMemoryError: CUDA out of memory"
 excerpt: ""
 
 categories:
