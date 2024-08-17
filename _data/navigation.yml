@@ -14,9 +14,6 @@ docs:
       - title: "얼굴 표정 인식 (Facial Expression Recognition)"
         url: /categories/ai-paper-review-fer
         category: "ai-paper-review-fer"
-      - title: "생성 모델 (Generative Model)"
-        url: /categories/ai-paper-review-gm
-        category: "ai-paper-review-gm"
       - title: "컴퓨터비전 (Computer Vision)"
         url: /categories/ai-paper-review-cv
         category: "ai-paper-review-cv"
@@ -29,6 +26,9 @@ docs:
       - title: "기계학습 (Machine Learning)"
         url: /categories/ai-ml
         category: "ai-ml"
+      - title: "딥러닝 (Deep Learning)"
+        url: /categories/ai-dl
+        category: "ai-dl"
       - title: "컴퓨터비전 (Computer Vision)"
         url: /categories/ai-cv
         category: "ai-cv"
