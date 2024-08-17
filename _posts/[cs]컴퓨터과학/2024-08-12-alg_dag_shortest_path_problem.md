@@ -44,7 +44,7 @@ Edge Relaxation의 코드는 다음과 같습니다. 여기서 ".d"는 시작점
 
 
 # DAG Shortest Path
-DAG 그래프의 최단경로를 찾는 문제입니다. DAG Shortest Path는 Topological Sort와 Edge Relaxation을 이용하여 구할 수 있습니다. Topological Sort에 대한 자세한 내용은 [여기](~~~)에서 확인하실 수 있습니다.
+DAG 그래프의 최단경로를 찾는 문제입니다. DAG Shortest Path는 Topological Sort와 Edge Relaxation을 이용하여 구할 수 있습니다. Topological Sort에 대한 자세한 내용은 [여기](https://stevenhskim.github.io/cs-alg/alg_topological_sort/)에서 확인하실 수 있습니다.
 
 DAG Shortest Path를 찾는 Pseudo Code는 아래와 같습니다.
 

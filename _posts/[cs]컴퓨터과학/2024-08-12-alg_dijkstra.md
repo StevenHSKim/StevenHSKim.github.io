@@ -32,7 +32,7 @@ Dijkstra 알고리즘에 사용되는 개념은 다음과 같습니다.
 - 추가 보조 자료구조로 **우선순위 큐(Priority Queue)** 를 사용합니다.
 - **Edge Relaxation** 을 사용합니다.
 
-Edge Relaxation의 개념이 설명되어 있는 글은 [여기](https://stevenhskim.github.io/cs-alg/dag_shortest_path_problem/)에 있습니다.
+Edge Relaxation의 개념이 설명되어 있는 글은 [여기](https://stevenhskim.github.io/cs-alg/alg_dag_shortest_path_problem/)에 있습니다.
 
 ## Dijkstra 알고리즘의 Pseudo Code
 <p align="center"><img src="https://github.com/user-attachments/assets/0df411f7-8d8f-43b5-b1db-8e3a66827978" width="300"></p>
@@ -112,7 +112,7 @@ Dijkstra 알고리즘은 Priority Queue를 구성하는 자료구조의 종류�
 
 ---
 
-음수의 가중치(Weight)를 가진 그래프의 Single Source Shortest Path를 찾는 알고리즘인 Bellman-Ford 알고리즘에 대한 글은 [여기](https://stevenhskim.github.io/cs-alg/bellman_ford/)에 있습니다.
+음수의 가중치(Weight)를 가진 그래프의 Single Source Shortest Path를 찾는 알고리즘인 Bellman-Ford 알고리즘에 대한 글은 [여기](https://stevenhskim.github.io/cs-alg/alg_bellman_ford/)에 있습니다.
 
 참고 자료:
 

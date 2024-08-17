@@ -33,7 +33,7 @@ Bellman-Ford 알고리즘은 두가지의 주요 기능을 가지고 있습니�
 
 <p align="center"><img src="https://github.com/user-attachments/assets/c61ab9cd-be59-4cf0-abb4-fa8803bd9f22" width="300"></p>
 
-참고로 Bellman-Ford 알고리즘에는 Relaxation 개념이 사용됩니다. Relaxation에 대한 설명글은 [여기](https://stevenhskim.github.io/cs-alg/dag_shortest_path_problem/)에 있습니다.
+참고로 Bellman-Ford 알고리즘에는 Relaxation 개념이 사용됩니다. Relaxation에 대한 설명글은 [여기](https://stevenhskim.github.io/cs-alg/alg_dag_shortest_path_problem/)에 있습니다.
 
 ## Bellman-Ford 알고리즘 Pseudo Code
 Bellman-Ford 알고리즘의 Pseudo Code는 다음과 같습니다. 
@@ -131,7 +131,7 @@ Bellman-Ford 알고리즘의 Running Time은 O(VE) + O(V) + O(E) 즉, **O(VE)** 
 
 ---
 
-Negative Edge가 없는 그래프에서 SSSP 문제를 푸는 알고리즘인 Dijkstra 알고리즘에 대한 게시물은 [여기](https://stevenhskim.github.io/cs-alg/dijkstra/)에 있습니다.
+Negative Edge가 없는 그래프에서 SSSP 문제를 푸는 알고리즘인 Dijkstra 알고리즘에 대한 게시물은 [여기](https://stevenhskim.github.io/cs-alg/alg_dijkstra/)에 있습니다.
 
 
 참고 자료:

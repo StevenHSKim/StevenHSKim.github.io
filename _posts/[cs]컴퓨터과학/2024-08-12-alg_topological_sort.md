@@ -16,7 +16,7 @@ date: 2024-08-12
 last_modified_at: 2024-08-12
 ---
 
-Topological Sort는 기본적으로 DFS를 통해 구현합니다. DFS에 대한 자세한 내용은 [여기](https://stevenhskim.github.io/cs-alg/dfs/)에 있습니다.
+Topological Sort는 기본적으로 DFS를 통해 구현합니다. DFS에 대한 자세한 내용은 [여기](https://stevenhskim.github.io/cs-alg/alg_dfs/)에 있습니다.
 
 # Topological Sort
 Topological Sort란 그래프를 표현하는 한 가지 방식입니다. 그래프를 수평적으로, 즉 모든 노드를 한 줄로 나열하여 정렬하는 방식입니다. Topological Sort는 Directed Acyclic Graph(DAG)에서 수행됩니다.
