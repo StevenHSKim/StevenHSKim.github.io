@@ -18,15 +18,15 @@ last_modified_at: 2024-08-18
 
 **Wasserstein Distance** 또한 거리를 나타내는 것 중 한 가지 방식입니다. 
 
-본 내용에서는 Wasserstein Distance를 이용하여 두 확률 분포(Probability Distribution)의 거리를 재보고, 왜 생성모델 중 GAN에 사용되는지 보겠습니다.
+본 내용에서는 Wasserstein Distance를 이용하여 두 확률 분포(Probability Distribution)의 거리를 재보고, 왜 이 거리가 Generative Adversarial Networks (GAN)에 사용되는지 보겠습니다.
 
 
 ## Distances(Metric) vs Divergence
 
 
-P와 Q를 서로 다른 확률분포라고 둘 때, 확률분포에서의 Distance 또는 Metric은 아래의 세가지 조건을 모두 만족합니다.
+\\(P\\)와 \\(Q\\)를 서로 다른 확률분포라고 둘 때, 확률분포에서의 Distance 또는 Metric은 아래의 세가지 조건을 모두 만족합니다.
 
-Divergence는 Distance보다 약한 개념이기는 하지만, 이 또한 거리의 개념(거리의 대략적인 추세?)를 나타내기에 많이 사용됩니다.
+Divergence는 Distance보다 약한 개념이기는 하지만, 이 또한 거리의 개념(거리의 대략적인 추세)를 나타내기에 많이 사용됩니다.
 
 <p align="center"><img src="https://github.com/user-attachments/assets/f4959cd8-0a87-4d10-8089-c4dd2d63e60a" width="600"></p>
 
@@ -83,7 +83,7 @@ Infimum 개념은 다음과 같습니다. 본 내용에서는 깊게 다루지 �
 <br>
 
 
-### Wasserstein Distance(Earth-Mover Distance)의 원리
+## Wasserstein Distance(Earth-Mover Distance)의 원리
 이제 Earth-Mover Distance라고도 불리는 Wasserstein Distance의 원리에 대해서 보겠습니다.
 
 왜 Earth-Mover Distance(ER distance) 이라고 불리는지 원리를 이해하면서 살펴보겠습니다.
@@ -108,7 +108,7 @@ Wasserstein Distance의 공식은 다음과 같습니다.
 
 <p align="center"><img src="https://github.com/user-attachments/assets/2a8e7716-625b-40b7-8b12-3db651abef4b" width="400"></p>
 
-\\(x\\)는 확률 분포 P를 따르는 변수, \\(y\\)는 확률 분포 Q를 따르는 변수라고 두면, 아래와 같은 \\(\gamma\\) joint distribution을 만들 수 있을 것입니다.
+\\(x\\)는 확률 분포 \\(P\\)를 따르는 변수, \\(y\\)는 확률 분포 \\(Q\\)를 따르는 변수라고 두면, 아래와 같은 \\(\gamma\\) joint distribution을 만들 수 있을 것입니다.
 
 <p align="center"><img src="https://github.com/user-attachments/assets/4875fccc-b95c-4be5-af64-020a23803393" width="200"></p>
 
@@ -126,7 +126,7 @@ Wasserstein Distance의 공식은 다음과 같습니다.
 
 
 
-그럼 이제 P분포를 Q분포로 이동해보겠습니다. Joint distribution에 나와있는 짝에 맞춰서, \\(P\\)의 4을 \\(Q\\)의 4으로 이동해보겠습니다. 이 경우에는 오른쪽으로 세 칸을 이동하죠? 이것을 모든 분포에 대해 적용하여 행으로 움직인 양을 계산하면 아래와 같습니다. 총 19이죠.
+그럼 이제 \\(P\\)분포를 \\(Q\\)분포로 이동해보겠습니다. Joint distribution에 나와있는 짝에 맞춰서, \\(P\\)의 4을 \\(Q\\)의 4으로 이동해보겠습니다. 이 경우에는 오른쪽으로 세 칸을 이동하죠? 이것을 모든 분포에 대해 적용하여 행으로 움직인 양을 계산하면 아래와 같습니다. 총 19이죠.
 
 <p align="center"><img src="https://github.com/user-attachments/assets/268cc7a7-4fb0-4ef8-b01c-52bd71b3eb38" width="400"></p>
 
@@ -173,11 +173,11 @@ Wasserstein Distance의 공식은 다음과 같습니다.
 
 (따라서, 앞선 예시들의 경우 블록이 총 7종류였기 때문에 19/7과 21/7 중, 더 작은 값인 19/7이 Wasserstein 값에 가깝겠죠.)
 
+<br>
 
+이 Wasserstein 공식을 쉽게 말로 풀어서 이해해보면 결국: **"\\(P\\)분포를 \\(Q\\)분포로 이동을 시키는데, 가장 효율적으로 이동하는 방법"** 입니다.
 
-이 Wasserstein 공식을 쉽게 말로 풀어서 이해해보면 결국: "\\(P\\)분포를 \\(Q\\)분포로 이동을 시키는데, 가장 효율적으로 이동하는 방법"입니다.
-
-P분포 모양의 흙더미를 \\(Q\\)분포 모양의 흙더미로 옮기는 것이라고 해서 "Earth-Mover distance"라고도 부르는 것입니다.
+P분포 모양의 흙더미를 \\(Q\\)분포 모양의 흙더미로 옮기는 것이라고 해서 "<u>Earth-Mover distance</u>" 라고도 부르는 것입니다.
 
 
 가장 효율적으로 옮기려면, 직관적으로 생각해도 P분포의 가장 왼쪽에 있는 것을 \\(Q\\)분포의 가장 왼쪽으로 옮기는 방식으로,아래 그림과 같이 차곡차곡 채워가는 식으로 분포를 이동하는 것이 가장 효율적인 방법일 것입니다.
@@ -210,11 +210,14 @@ P분포 모양의 흙더미를 \\(Q\\)분포 모양의 흙더미로 옮기는 �
 
 <p align="center"><img src="https://github.com/user-attachments/assets/e52a6ed3-e68d-4186-a5b8-0da871a82967" width="550"></p>
 
-이제 disjoint supports를 다시 보면, Wasserstein distance를 사용한 경우, disjoint support라고 하더라도 \\(Q\\)가 멀리 가면 멀리 갈수록 값이 커지게 됩니다. 반대로 가까이 가면 작아지겠죠. 아까 본 세개의 divergence에서는 거의 불가능했던 내용입니다. Wasserstein distance의 이러한 특징이 GAN을 학습하는 데 아주 중요한 역할을 합니다. GAN이 학습할 때 초기 단계에서 Generator가 만든 fake data는 초기에는 성능이 많이 떨어져서 real data와 거의 전혀 다른 모습입니다. 그럼 두 분포가 아주 많이 떨어져 있을 텐데 그런 경우에 KL divergence나 JSD 이런 것들은 실제로 이 간격을 줄이는 것을 잘 할 수가 없습니다. 그런데 Wasserstein distance는 이 두 분포가 많이 떨어져 있다 하더라도 이 두 분포의 거리를 잘 줄일 수 있습니다.
+이제 disjoint supports를 다시 보면, Wasserstein distance를 사용한 경우, disjoint support라고 하더라도 \\(Q\\)가 멀리 가면 멀리 갈수록 값이 커지게 됩니다. 반대로 가까이 가면 작아지겠죠. 아까 본 세개의 divergence에서는 거의 불가능했던 내용입니다. Wasserstein distance의 이러한 특징이 GAN을 학습하는 데 아주 중요한 역할을 합니다. 
+
+GAN이 학습할 때 초기 단계에서 Generator가 만든 fake data는 초기에는 성능이 많이 떨어져서 real data와 거의 전혀 다른 모습입니다. 그럼 두 분포가 아주 많이 떨어져 있을 텐데 그런 경우에 KL divergence나 JSD 이런 것들은 실제로 이 간격을 줄이는 것을 잘 할 수가 없습니다. 그런데 Wasserstein distance는 이 두 분포가 많이 떨어져 있다 하더라도 이 두 분포의 거리를 잘 줄일 수 있습니다.
 
 
 
-
+---
+<br>
 
 본 내용은 [고려대학교 오승상 교수님의 강의 영상](https://www.youtube.com/watchv=Fsv57RcHRWQ&ab_channel=%EC%98%A4%EC%8A%B9%EC%83%81Gmail)을 토대로 만들어졌습니다.
 
