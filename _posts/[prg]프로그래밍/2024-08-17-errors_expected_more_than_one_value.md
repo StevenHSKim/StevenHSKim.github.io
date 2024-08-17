@@ -15,7 +15,7 @@ last_modified_at: 2024-08-17
 ---
 
 ## 발생한 에러:
-```bash
+```zsh
 ValueError: Expected more than 1 value per channel when training, got input size torch.
 Size([1, 512, 1, 1])
 ```

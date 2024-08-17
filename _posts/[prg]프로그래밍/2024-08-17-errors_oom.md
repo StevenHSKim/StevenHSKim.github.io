@@ -15,7 +15,7 @@ last_modified_at: 2024-08-17
 ---
 
 ## 발생한 에러:
-```bash
+```zsh
 torch.cuda.OutOfMemoryError: CUDA out of memory. Tried to allocate 50.00 MiB (GPU 0; 23
 .68 GiB total capacity; 22.27 GiB already allocated; 40.88 MiB free; 22.63 GiB reserved
 in total by PyTorch) If reserved memory is >> allocated memory try setting max_split_si

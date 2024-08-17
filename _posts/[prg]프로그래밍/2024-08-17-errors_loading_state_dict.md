@@ -17,7 +17,7 @@ last_modified_at: 2024-08-17
 ## 발생한 에러:
 모델 test 과정에서 ./pretrained 폴더의 .pth 파일을 torch.load 하는 부분에서 아래의 오류가 발생했다.
 
-```bash
+```zsh
 model.load_state_dict(checkpoint['model_state_dict'])
   File "/~/DDAMFN/lib/python3.10/site-packages/torch/nn/modules/module.py", line 1671, in load_state_dict
     raise RuntimeError('Error(s) in loading state_dict for {}:\n\t{}'.format(
@@ -36,7 +36,7 @@ RuntimeError: Error(s) in loading state_dict for DDAMNet:
 
 나의 경우에는 test에 사용할 .pth 파일을 train 함수에서 생성하는 과정에서 DataParallel을 사용하였다. 따라서 모델을 저장할 때 nn.DataParallel을 사용하여 모든 키 앞에 'module.'이 추가되어 저장되었음을 파악했다. 
 
-```bash
+```zsh
 def train(train_loader, val_loader, device, args, iteration):
     model = DDAMNet(num_class=7, num_head=args.num_head)
     model = nn.DataParallel(model)  # 모델을 DataParallel로 감싸기
