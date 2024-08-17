@@ -7,7 +7,7 @@ categories:
 tags:
   - error
   - pytorch
-  - out of memory error
+  - value error
 
 date: 2024-08-17
 last_modified_at: 2024-08-17
