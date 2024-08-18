@@ -3,9 +3,8 @@ title: "[컴퓨터비전] 안면 데이터셋 (Facial Dataset) 개념 및 종류
 excerpt: "Facial Expression Recognition에 사용되는 Facial Dataset의 개념 및 종류 정리"
 
 categories:
-  - ai-cv
+  - ai-paper-review-fer
 tags:
-  - computer vision
   - dataset
   - facial expression recognition
 
