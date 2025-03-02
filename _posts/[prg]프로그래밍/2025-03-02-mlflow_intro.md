@@ -39,39 +39,39 @@ MLflow의 Tracking은 실험의 하이퍼파라미터, 메트릭, 결과 등을 
 
 MLflow를 Run하면 아래와 같이 실험의 고유한 Run ID가 생성된다.
 
-<img width="400" alt="Image" src="https://github.com/user-attachments/assets/d1a33c0c-976a-4da0-87c9-4b5f0c4b8c6e" />
+<p align="center"><img width="400" alt="Image" src="https://github.com/user-attachments/assets/d1a33c0c-976a-4da0-87c9-4b5f0c4b8c6e" /></p>
 
 - **Parameters**: 각 실험에서 모델 학습에 사용된 하이퍼파라미터 값을 기록하여 실험을 비교하고 재현성을 확보한다.
-<img width="400" alt="Image" src="https://github.com/user-attachments/assets/a1fb27e2-86d7-49ac-8848-0da342d7995f" />
+<p align="center"><img width="400" alt="Image" src="https://github.com/user-attachments/assets/a1fb27e2-86d7-49ac-8848-0da342d7995f" /></p>
 
 
 - **Metrics**: 정확도, 손실 함수 값 등 모델 성능을 평가하는 지표를 저장하여 실험 결과를 분석할 수 있도록 한다.
-<img width="400" alt="Image" src="https://github.com/user-attachments/assets/33272627-9f64-4dc0-a025-529878e05b1c" />
+<p align="center"><img width="400" alt="Image" src="https://github.com/user-attachments/assets/33272627-9f64-4dc0-a025-529878e05b1c" /></p>
 
     아래와 같이 Metric을 Step 별로 추적할 수도 있다.
 
-    <img width="400" alt="Image" src="https://github.com/user-attachments/assets/38886335-426e-40aa-bfce-6acc67f91291" />
+<p align="center"><img width="400" alt="Image" src="https://github.com/user-attachments/assets/38886335-426e-40aa-bfce-6acc67f91291" /></p>
 
 
 - **Artifacts**: 실험에서 사용 및 출력된 임의의 파일을 업로드하여 관리할 수 있으며, 이를 통해 실험 간 특징 비교 분석이 가능하다.
 
     아래는 각 실험별 Artifacts에 저장된 PR Curve를 비교하는 이미지이다. 이미지 뿐만 아니라, 모델 가중치 저장 파일 등 실험과 관련된 다양한 파일을 저장할 수 있다.
     
-    <img width="400" alt="Image" src="https://github.com/user-attachments/assets/bd1fa145-2469-491b-bbe7-8751b4c303e6" />
+    <p align="center"><img width="400" alt="Image" src="https://github.com/user-attachments/assets/bd1fa145-2469-491b-bbe7-8751b4c303e6" /></p>
 
 
 - **Tags and Notes**: 실험에 임의의 Tag를 달아두고 추후 원하는 실험을 필터링하여 찾아볼 수 있어, 실험 결과 해석에 유용하게 사용 가능하다. 
 
     아래 예시는 탐색 방법 별 Tag로 실험을 분류한 것이다.
 
-    <img width="400" alt="Image" src="https://github.com/user-attachments/assets/4d359197-d750-4c04-8587-e229a860775f" />
+    <p align="center"><img width="400" alt="Image" src="https://github.com/user-attachments/assets/4d359197-d750-4c04-8587-e229a860775f" /></p>
 
 
 Tag를 통해 실험을 필터링 하여, 파라미터와 메트릭 간의 상관관계를 실험 별로 분석할 수도 있다.
 
 이전 예시에서 Random 탐색 방법과, Grid 탐색 방법으로 실험을 구분하였다. 아래 예시는 해당 탐색방법 별 초기 학습률(lr0)과 메트릭(mAP50-95) 간의 상관관계를 보여준다.
 
-<img width="500" alt="Image" src="https://github.com/user-attachments/assets/531b5a98-d846-4f36-9b4b-7ffabc1a252e" />
+<p align="center"><img width="500" alt="Image" src="https://github.com/user-attachments/assets/531b5a98-d846-4f36-9b4b-7ffabc1a252e" /></p>
 
 
 
@@ -79,7 +79,7 @@ Tag를 통해 실험을 필터링 하여, 파라미터와 메트릭 간의 상�
 
 MLflow의 Projects는 코드, 환경 설정, 종속성을 표준화된 방식으로 패키징하여 재현 가능한 실행 환경을 제공한다.
 
-<img width="600" alt="Image" src="https://github.com/user-attachments/assets/a968c483-d4e7-4496-8541-55af73f2c5bb" />
+<p align="center"><img width="600" alt="Image" src="https://github.com/user-attachments/assets/a968c483-d4e7-4496-8541-55af73f2c5bb" /></p>
 
 - mlflow.projects를 이용하면 다양한 환경(로컬, 클러스터, 클라우드 등)에서 손쉽게 실행이 가능하다.
 - MLProject 파일이 존재하면, 예를 들어 이를 Github환경 또는 Docker 환경 등 다양한 환경에서 직접 실행 가능하다.
@@ -89,13 +89,13 @@ MLflow의 Projects는 코드, 환경 설정, 종속성을 표준화된 방식으
 
 MLflow의 Models는 다양한 형식의 모델을 저장하고, 로드 및 배포할 수 있도록 지원하여 효율적인 모델 관리가 가능하게 한다.
 
-<img width="500" alt="Image" src="https://github.com/user-attachments/assets/0f27013f-6672-4b0d-8f8d-d0a93a85753f" />
+<p align="center"><img width="500" alt="Image" src="https://github.com/user-attachments/assets/0f27013f-6672-4b0d-8f8d-d0a93a85753f" /></p>
 
 - 모델을 저장하면, 각 모델의 Unique ID와 함께 AWS S3, GCS 등 클라우드 스토리지에 저장할 수 있으며 추후 다시 로드하여 사용할 수 있음
 
 모델을 불러올 때, PyFunc를 함께 사용할 수 있다. PyFunc은 다양한 프레임워크 모델을 하나의 공통 인터페이스로 제공하는 모듈이다.
 
-<img width="500" alt="Image" src="https://github.com/user-attachments/assets/14244832-424f-4729-ab98-afd04154a020" />
+<p align="center"><img width="500" alt="Image" src="https://github.com/user-attachments/assets/14244832-424f-4729-ab98-afd04154a020" /></p>
 
 - mlflow.pyfunc.load_model()을 사용하면 Scikit-learn, PyTorch, TensorFlow 등 다양한 모델을 동일한 방식으로 호출이 가능하다.
 
@@ -103,7 +103,7 @@ MLflow의 Models는 다양한 형식의 모델을 저장하고, 로드 및 배�
 
 MLflow로 저장된 모델은 모델 스키마와 함께 저장되며, 모델을 로드할 수 있는 가이드 코드가 함께 보여진다.
 
-<img width="600" alt="Image" src="https://github.com/user-attachments/assets/22972914-272d-4959-9a27-eab46b599f12" />
+<p align="center"><img width="600" alt="Image" src="https://github.com/user-attachments/assets/22972914-272d-4959-9a27-eab46b599f12" /></p>
 
 - 앞서 소개한 것처럼, 외부 저장소에 저장된 모델을 pyfunc.load_model()을 이용하여 불러옴으로써 프레임워크에 상관 없이 동일한 인터페이스를 통해 예측을 수행할 수 있도록 패키징됨
 
@@ -111,11 +111,11 @@ MLflow로 저장된 모델은 모델 스키마와 함께 저장되며, 모델을
 ## 3. MLflow 추가 기능
 MLflow를 통해 모델을 저장하였다면, 이를 도커화 시켜서 추론을 진행할 수 있다.
 
-<img width="600" alt="Image" src="https://github.com/user-attachments/assets/62d5a661-b5bd-4a31-8728-a64e1a9e64ea" />
+<p align="center"><img width="600" alt="Image" src="https://github.com/user-attachments/assets/62d5a661-b5bd-4a31-8728-a64e1a9e64ea" /></p>
 
 - 만약 AWS S3 클라우드 스토리지 등을 연동하여 모델을 저장했다면, 위 코드처럼 해당 스토리지에서 저장된 모델을 불러와 도커 이미지를 빌드할 수 있다.
 
-<img width="600" alt="Image" src="https://github.com/user-attachments/assets/b237b4f3-9dea-4543-bc5a-b6e094c32d05" />
+<p align="center"><img width="600" alt="Image" src="https://github.com/user-attachments/assets/b237b4f3-9dea-4543-bc5a-b6e094c32d05" /></p>
 
 - 빌드된 Docker 파일 내에, 위 코드처럼 Miniconda를 통힌 환경 활성화 및 Gunicorn 통한 서버 실행 코드를 추가하는 커스터마이즈를한 뒤 도커 파일을 실행한다면, 쉽게 모델을 서버에 배포할 수 있다.
 
@@ -123,7 +123,7 @@ MLflow를 통해 모델을 저장하였다면, 이를 도커화 시켜서 추론
 
 아래는 ’콴다(QANDA)’ 서비스를 제공하는 ‘매스프레소(MATHPRESSO)’사의 MLflow 활용 배포 파이프라인 예시이다. 기존에 Elastic Beanstalk 기반 배포 파이프라인을 가지고 있었기 때문에, 이에 통합하는 방식을 취하였다고 한다.
 
-<img width="500" alt="Image" src="https://github.com/user-attachments/assets/ad094cba-7e2e-40f6-943f-949686e5f10b" />
+<p align="center"><img width="500" alt="Image" src="https://github.com/user-attachments/assets/ad094cba-7e2e-40f6-943f-949686e5f10b" /></p>
 
 **배포 세부 프로세스**:
 
@@ -140,4 +140,4 @@ MLflow를 통해 모델을 저장하였다면, 이를 도커화 시켜서 추론
 
 ---
 
-[다음 글]()에서는 MLflow를 이용하여 모델의 전체 라이프사이클을 분석하는 간단한 실습을 확인할 수 있다.
+[다음 글](https://stevenhskim.github.io/prg-mlflow/mlflow_yolo_hpo/)에서는 MLflow를 이용하여 모델의 전체 라이프사이클을 분석하는 간단한 실습을 확인할 수 있다.
