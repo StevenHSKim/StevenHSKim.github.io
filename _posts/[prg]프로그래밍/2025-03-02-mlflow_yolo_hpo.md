@@ -26,14 +26,8 @@ last_modified_at: 2025-03-02
   4. 각 실험 내용 및 결과를 MLflow를 통해 비교 분석한다.
 
 **실험 세팅 정리**
-| 항목       | 내용 |
-|------------|----------------------------------------------|
-| **모델**   | YOLO v11 nano |
-| **테스크** | Object Detection |
-| **데이터셋** | Pascal VOC: 20개 객체 클래스, 이미지 11,530장, 27,450개 객체 |
-| **학습 방법** | COCO 데이터셋으로 사전학습된 YOLO v11 nano 모델을 파인튜닝 |
-| **HPO 도구** | Optuna |
-| **탐색 방법** | TPE search (default), Grid search, Random search |
+<p align="center"><img width="400" alt="Image" src="https://github.com/user-attachments/assets/5cae0d6b-a9af-4805-aa8e-1eebd83def9b" /></p>
+
 
 
 ## 2. 실험 내용
