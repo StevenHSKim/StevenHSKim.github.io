@@ -1,9 +1,9 @@
 ---
-title: "[MLflow] MLflow란?"
+title: "[MLOps][MLflow] MLflow란?"
 excerpt: "MLflow 개념 소개"
 
 categories:
-  - prg-mlflow
+  - prg-mlops
 tags:
   - mlops
   - mlflow

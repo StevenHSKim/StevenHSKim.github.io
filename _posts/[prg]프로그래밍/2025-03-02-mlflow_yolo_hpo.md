@@ -1,9 +1,9 @@
 ---
-title: "[MLflow] MLflow를 활용한 YOLOv11-nano 학습 과정 추적"
+title: "[MLOps][MLflow] MLflow를 활용한 YOLOv11-nano 학습 과정 추적"
 excerpt: "간단한 MLflow 추적 실습"
 
 categories:
-  - prg-mlflow
+  - prg-mlops
 tags:
   - mlops
   - mlflow

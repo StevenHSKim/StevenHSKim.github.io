@@ -1,9 +1,9 @@
 ---
-title: "[에러][Pytorch] torch.cuda.OutOfMemoryError: CUDA out of memory"
+title: "[Pytorch][에러] torch.cuda.OutOfMemoryError: CUDA out of memory"
 excerpt: ""
 
 categories:
-  - prg-error
+  - prg-pytorch
 tags:
   - programming
   - error

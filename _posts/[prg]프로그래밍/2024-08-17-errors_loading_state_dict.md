@@ -1,9 +1,9 @@
 ---
-title: "[에러][Pytorch] RuntimeError: Error(s) in loading state_dict"
+title: "[Pytorch][에러] RuntimeError: Error(s) in loading state_dict"
 excerpt: ""
 
 categories:
-  - prg-error
+  - prg-pytorch
 tags:
   - programming
   - error

@@ -56,12 +56,6 @@ docs:
       - title: "리눅스(Linux)"
         url: /categories/prg-linux
         category: "prg-linux"
-      - title: "아나콘다(Anaconda)"
-        url: /categories/prg-anaconda
-        category: "prg-anaconda"
-      - title: "에러 해결(Error Resolution)"
-        url: /categories/prg-error
-        category: "prg-error"
 
   - title: ETC
     children:

@@ -1,5 +1,5 @@
 ---
-title: "[아나콘다] 가상환경 복제 및 이동"
+title: "[Linux][아나콘다] 가상환경 복제 및 이동"
 excerpt: ""
 
 categories:

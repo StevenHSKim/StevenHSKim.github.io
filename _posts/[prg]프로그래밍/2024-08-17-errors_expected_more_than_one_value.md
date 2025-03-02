@@ -1,9 +1,9 @@
 ---
-title: "[에러][Pytorch] ValueError: Expected more than 1 value per channel when training, got input size torch.Size([1, C, 1, 1])"
+title: "[Pytorch][에러] ValueError: Expected more than 1 value per channel when training, got input size torch.Size([1, C, 1, 1])"
 excerpt: ""
 
 categories:
-  - prg-error
+  - prg-pytorch
 tags:
   - programming
   - error
