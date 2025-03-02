@@ -140,4 +140,4 @@ MLflow를 통해 모델을 저장하였다면, 이를 도커화 시켜서 추론
 
 ---
 
-[다음 글](https://stevenhskim.github.io/prg-mlflow/mlflow_yolo_hpo/)에서는 MLflow를 이용하여 모델의 전체 라이프사이클을 분석하는 간단한 실습을 확인할 수 있다.
+[다음 글](https://stevenhskim.github.io/prg-mlops/mlflow_yolo_hpo/)에서는 MLflow를 이용하여 모델의 전체 라이프사이클을 분석하는 간단한 실습을 확인할 수 있다.

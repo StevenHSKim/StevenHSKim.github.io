@@ -12,7 +12,7 @@ date: 2025-03-02
 last_modified_at: 2025-03-02
 ---
 
-[MLflow 소개 글](https://stevenhskim.github.io/prg-mlflow/mlflow_intro/)에 이어서 MLflow를 활용한 간단한 실습에 대한 글이다. 해당 글에 소개된 실험에 대한 소스코드는 [여기](https://github.com/StevenHSKim/MLFlow-study)에서 확인할 수 있다.
+[MLflow 소개 글](https://stevenhskim.github.io/prg-mlops/mlflow_intro/)에 이어서 MLflow를 활용한 간단한 실습에 대한 글이다. 해당 글에 소개된 실험에 대한 소스코드는 [여기](https://github.com/StevenHSKim/MLFlow-study)에서 확인할 수 있다.
 
 
 ## 1. 실험 설정
