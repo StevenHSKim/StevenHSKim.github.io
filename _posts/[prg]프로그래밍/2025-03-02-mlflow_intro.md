@@ -48,7 +48,7 @@ MLflow를 Run하면 아래와 같이 실험의 고유한 Run ID가 생성된다.
 - **Metrics**: 정확도, 손실 함수 값 등 모델 성능을 평가하는 지표를 저장하여 실험 결과를 분석할 수 있도록 한다.
 <p align="center"><img width="400" alt="Image" src="https://github.com/user-attachments/assets/33272627-9f64-4dc0-a025-529878e05b1c" /></p>
 
-    아래와 같이 Metric을 Step 별로 추적할 수도 있다.
+아래와 같이 Metric을 Step 별로 추적할 수도 있다.
 
 <p align="center"><img width="400" alt="Image" src="https://github.com/user-attachments/assets/38886335-426e-40aa-bfce-6acc67f91291" /></p>
 
