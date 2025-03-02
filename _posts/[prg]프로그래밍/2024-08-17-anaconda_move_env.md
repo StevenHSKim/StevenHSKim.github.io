@@ -3,9 +3,10 @@ title: "[아나콘다] 가상환경 복제 및 이동"
 excerpt: ""
 
 categories:
-  - prg-anaconda
+  - prg-linux
 tags:
   - programming
+  - linux
   - anaconda
 
 date: 2024-08-17
