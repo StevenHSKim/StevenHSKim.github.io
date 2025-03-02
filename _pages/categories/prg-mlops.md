@@ -1,12 +1,12 @@
 ---
 title: "MLflow"
 layout: archive
-permalink: categories/prg-mlflow
+permalink: categories/prg-mlops
 author_profile: true
 types: posts
 ---
 
-{% assign posts = site.categories['prg-mlflow']%}
+{% assign posts = site.categories['prg-mlops']%}
 {% for post in posts %}
   {% include archive-single2.html type=page.entries_layout %}
 {% endfor %}
