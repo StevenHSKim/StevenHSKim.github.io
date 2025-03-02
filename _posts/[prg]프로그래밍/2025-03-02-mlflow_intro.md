@@ -15,7 +15,7 @@ last_modified_at: 2025-03-02
 ## 1. MLflow 소개
 MLFlow는 오픈소스 MLOps 플랫폼으로, ML 모델 개발, 실험 추적, 배포 및 관리를 지원한다. 즉, 모델 라이프사이클 전반을 다루는 도구이다.
 
-<img width="500" alt="Image" src="https://github.com/user-attachments/assets/9bef355a-ae9e-40d9-947b-5caaf2e1249d" />
+<p align="center"><img width="500" alt="Image" src="https://github.com/user-attachments/assets/9bef355a-ae9e-40d9-947b-5caaf2e1249d" /></p>
 
 
 MLFlow는 크게 아래의 세가지 기능을 지원한다.
