@@ -1,5 +1,5 @@
 ---
-title: "[MLflow] MLflow의 개념"
+title: "[MLflow] MLflow란?"
 excerpt: "MLflow 개념 소개"
 
 categories:
