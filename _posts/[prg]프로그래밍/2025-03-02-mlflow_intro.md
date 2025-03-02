@@ -1,6 +1,6 @@
 ---
 title: "[MLflow] MLflow의 개념"
-excerpt: ""
+excerpt: "MLflow 개념 소개"
 
 categories:
   - prg-mlflow
