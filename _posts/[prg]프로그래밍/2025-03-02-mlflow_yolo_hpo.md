@@ -14,9 +14,10 @@ last_modified_at: 2025-03-02
 
 [MLflow 소개 글](https://stevenhskim.github.io/prg-mlflow/mlflow_intro/)에 이어서 MLflow를 활용한 간단한 실습에 대한 글이다. 해당 글에 소개된 실험에 대한 소스코드는 [여기](https://github.com/StevenHSKim/MLFlow-study)에서 확인할 수 있다.
 
-해당 실습에 대한 실험 세팅은 아래와 같다.
 
 ## 1. 실험 설정
+해당 실습에 대한 실험 세팅은 아래와 같다.
+
 **실험 목표**: MLflow를 이용하여 모델의 전체 라이프사이클을 분석한다.
 
 **실험 세부 과정**:
@@ -106,7 +107,7 @@ Visualization 뿐만 아니라, Run details, Parameters, Metric, Tags 등의 실
 
 이러한 다양한 도구를 통해 최적의 하이퍼파라미터 조합을 분석하고 모델 개선 방향을 효율적으로 도출할 수 있다.
 
-
+---
 
 모델을 저장했다면 아래의 예시처럼 모델이 저장됨을 알 수 있다.
 
@@ -115,6 +116,7 @@ Visualization 뿐만 아니라, Run details, Parameters, Metric, Tags 등의 실
 - MLflow를 통해 모델을 저장하면 해당 모델이 패키징되어 의존성과 함께 관리되므로, 일관된 환경에서 불러와 활용할 수 있다.
 - 또한 저장된 위치를 기반으로 불러오는 예시 코드를 함께 제공하여 쉬운 배포와 재현이 가능하다.
 
+---
 
 추가로, MLflow를 통해 모델을 저장하였다면 이를 도커화 시켜서 추론을 진행할 수 있다.
 

@@ -59,6 +59,9 @@ docs:
 
   - title: 프로그래밍 (Programming)
     children:
+      - title: "MLflow"
+        url: /categories/prg-mlflow
+        category: "prg-mlflow"
       - title: "파이토치 (PyTorch)"
         url: /categories/prg-pytorch
         category: "prg-pytorch"
