@@ -111,7 +111,7 @@ Lasso 회귀는 L1 페널티(계수 절댓값의 합)를 사용해 불필요한 
 
 
 ### 계수 시각화
-<p align="center"><img src="https://github.com/user-attachments/assets/e17854e3-c1a4-4c04-9015-6004139d54c3" width="800"></p>
+<img src="https://github.com/user-attachments/assets/e17854e3-c1a4-4c04-9015-6004139d54c3" width="800">
 위 그림은 데이터 생성 과정에서의 실제 계수를 보여줍니다.
 
 <p align="center"><img src="https://github.com/user-attachments/assets/c56883b3-6ec9-4b2b-838d-e16c72fecd4f" width="1000"></p>
