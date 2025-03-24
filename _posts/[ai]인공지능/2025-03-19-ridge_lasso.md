@@ -95,6 +95,7 @@ Lasso 회귀는 L1 페널티(계수 절댓값의 합)를 사용해 불필요한 
 
 패널티 항의 형태:
 - Ridge: \\(\lambda \sum_{j=1}^{p} \beta_j^2\\) 를 사용하여 모든 계수를 작게 만드는 데 초점을 맞춥니다.
+
 - Lasso: \\(​\lambda \sum_{j=1}^{p} |\beta_j|\\) 를 사용하여 일부 계수를 0으로 만들 수 있습니다.
 
 두 기법을 비교해 보면, Ridge는 모든 변수를 유지하면서 계수 값을 작게 만들어 안정성을 높이고 다중공선성을 완화하는 데 강점을 가지며, Lasso는 변수 선택을 통해 모델을 단순화하고 중요하지 않은 특성을 제거함으로써 해석성을 높입니다.
@@ -112,6 +113,7 @@ Lasso 회귀는 L1 페널티(계수 절댓값의 합)를 사용해 불필요한 
 
 ### 계수 시각화
 <img src="https://github.com/user-attachments/assets/e17854e3-c1a4-4c04-9015-6004139d54c3" width="800">
+
 위 그림은 데이터 생성 과정에서의 실제 계수를 보여줍니다.
 
 <p align="center"><img src="https://github.com/user-attachments/assets/c56883b3-6ec9-4b2b-838d-e16c72fecd4f" width="1000"></p>
